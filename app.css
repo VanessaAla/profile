@@ -1,0 +1,186 @@
+html {
+    width: 100%;
+    height: 100%;
+    font-family: fantasy;
+    background-image: url("background-pic.jpg");
+    background-size: auto;
+}
+
+.name-header {
+    font-size: 60px;
+    text-align: center;
+}
+
+.profile-picture {
+    width: 180px;
+    height: 180px;
+    background-image: url("profile-picture.jpg");
+    background-size: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-me {
+    font-size: 70px;
+    text-align: center;
+    font-family: cursive;
+}
+
+.row {
+    display: flex;
+  }
+  
+.column {
+    height: 200px;
+    border: 1px solid rgb(8, 8, 8);
+    word-break: keep-all;
+    float: left;
+    flex: 33.33%;
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+.column-color-a {
+  background-color: #30692d;
+  color: #fff;
+}
+
+.column-color-b {
+  background-color: #e9b066;
+}
+
+.column-text {
+    width: 100%;
+}
+
+.things-i-like {
+  font-size: 70px;
+  text-align: center;
+  font-family: cursive;
+}
+
+/* PICTURE ROWS */
+
+.column-picture {
+  height: 200px;
+  width: 200px;
+  word-break: keep-all;
+  flex: 33.33%;
+  padding: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+  width: 400px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #060707;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.textOverImage {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin: 4px;
+  background-size: 100%;
+  background-position: center;
+  transition: 0,5s;
+}
+
+.textOverImage :hover {
+  background-size: 110%
+}
+
+.textOverImage::after {
+position: absolute;
+top: 90%;
+bottom: 0;
+left: 0;
+right: 0;
+white-space: pre-wrap;
+overflow: hidden;
+background-color: rgba(0,0,0,0.3);
+color: #fff;
+padding: 0 8px;
+content: attr(data-text);
+transition: 0.5s;
+}
+
+.textOverImage:hover:after {
+opacity: 1;
+top: 0;
+padding: 8px;
+}
+
+.textOverImage::first-line {
+  color: #fffc2e;
+  font-weight: bold;
+  font-family: fantasy;
+  font-size: 1.5em;
+}
+
+.row-picture {
+  display: flex;
+  height: 500px;
+}
+
+.find-me {
+  font-size: 70px;
+  text-align: center;
+  font-family: cursive;
+}
+
+#social-banner ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#social-banner {
+  background: #e9b066;
+  text-align: center;
+  font-size: 25px;
+  line-height: 29px;
+  text-align: center;
+}
+
+#social-banner li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+#social-banner a {
+  color: rgb(5, 5, 5)
+}
+
+#social-banner > div {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
